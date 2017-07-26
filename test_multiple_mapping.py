@@ -56,14 +56,12 @@ if __name__ == '__main__':
       cost += compute_partial_cost(tractographyA, tractographyB, assignment)
   
   rank = cost.argsort()
-  #plt.hist(cost, bins=50)
-  #plt.show()
+
   
   show=True  
   if show: 
    ren = fvtk.ren()           
-   #fvtk.add(ren, fvtk.line(tractography_1[rank[:100]].tolist(), fvtk.colors.white, linewidth=2, opacity=0.5))
-   #fvtk.add(ren, fvtk.line(tractography_1[rank[-100:]].tolist(), fvtk.colors.blue, linewidth=2, opacity=0.5))
+  
    fvtk.add(ren, fvtk.line(tractographyA[rank[:2000]].tolist(), fvtk.colors.white, linewidth=2, opacity=0.5))
    fvtk.add(ren, fvtk.line(tractographyA[rank[-2000:]].tolist(), fvtk.colors.blue, linewidth=2, opacity=0.5))
    fvtk.show(ren)  
