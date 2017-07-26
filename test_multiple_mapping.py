@@ -1,7 +1,6 @@
 import numpy as np
 from dipy.tracking.distances import bundles_distances_mam
-import pickle
-from dipy.io.pickles import load_pickle, save_pickle
+from dipy.io.pickles import load_pickle
 from nibabel import trackvis
 from dipy.viz import fvtk
 
