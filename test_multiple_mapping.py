@@ -4,7 +4,7 @@ import pickle
 from dipy.io.pickles import load_pickle, save_pickle
 from nibabel import trackvis
 from dipy.viz import fvtk
-import matplotlib.pyplot as plt
+
 
 
 def load_tractography(filename_tractography ):
