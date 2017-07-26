@@ -52,7 +52,7 @@ if __name__ == '__main__':
       if len(tractographyA) > len(tractographyB):
           name = sidA + sidB
           
-      assignment = load_pickle('/home/nusrat/Dropbox/result_wb_solp/Assignment/'+ name +'.pkl')
+      assignment = load_pickle('result_wb_solp/Assignment/'+ name +'.pkl')
       cost += compute_partial_cost(tractographyA, tractographyB, assignment)
   
   rank = cost.argsort()
